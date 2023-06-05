@@ -13,10 +13,31 @@ body {
 .calFrame {
     background-color: #0F1013;
     width: 500px;
-    height: 650px;
+    height: 700px;
 }
 #screen {
     background-color: #D7DACE;
     margin: 12px;
     height: 90px;
+}
+#btns {
+    display: flex;
+    height: 500px;
+}
+#nums {
+    display: grid;
+    height: 450px;
+    width: 350px;
+    grid-gap: 12px;
+    margin: 50px 25px 0px 15px;
+}
+#operations {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 450px;
+    width: 100px;
+    margin-top: 50px;
+    font-size: 65px;
+    text-align: center;
 }
