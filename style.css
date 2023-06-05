@@ -1,3 +1,6 @@
+* {
+    font-family: 'Chivo Mono', Arial, sans-serif;
+}
 body {
     margin: 0;
 }
@@ -16,6 +19,7 @@ body {
     height: 700px;
 }
 #screen {
+    text-align: right;
     background-color: #D7DACE;
     margin: 12px;
     height: 90px;
