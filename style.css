@@ -34,6 +34,8 @@ body {
     width: 350px;
     grid-gap: 12px;
     margin: 50px 25px 0px 15px;
+    font-size: 65px;
+    text-align: center;
 }
 #operations {
     display: flex;
