@@ -4,17 +4,26 @@ const operationsFrame = document.getElementById("operations");
 function makeNums() {
 numsFrame.style.setProperty('grid-template-rows', `repeat(${3}, 1fr)`);
 numsFrame.style.setProperty('grid-template-columns', `repeat(${3}, 1fr)`);
-    for (c = 0; c <= 9; c++) {
+    for (c = 1; c <= 9; c++) {
         let cell = document.createElement("div");
         let grid = numsFrame.appendChild(cell);
         grid.className = `grid-item`;
         grid.setAttribute('id', `num${c}`);
+        grid.innerHTML = `${c}`;
         let x = document.getElementById(`num${c}`);
         x.setAttribute('style', 'background-color: #f3fae1; border-radius: 25px;');
         
     };
 };
 makeNums();
+
+function makeZeroBtn() {
+    let btnDiv = document.createElement("div");
+    let btn = numsFrame.appendChild(btnDiv);
+    btn.setAttribute('style', 'background-color: #f3fae1; border-radius: 25px;');
+
+};
+makeZeroBtn();
 
 function makeOperations() {
     for(i = 1; i <= 5; i++) {
