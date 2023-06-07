@@ -1,3 +1,4 @@
+const btnsFrame = document.getElementById("cal");
 const numsFrame = document.getElementById("nums");
 const operationsFrame = document.getElementById("operations");
 
@@ -19,7 +20,9 @@ makeNums();
 
 function makeZeroBtn() {
     let btnDiv = document.createElement("div");
-    let btn = numsFrame.appendChild(btnDiv);
+    let btn = btnsFrame.appendChild(btnDiv);
+    btn.setAttribute('id', 'zeroBtn');
+    btn.innerHTML = '0'
     btn.setAttribute('style', 'background-color: #f3fae1; border-radius: 25px;');
 
 };
@@ -29,7 +32,7 @@ function makeOperations() {
     for(i = 1; i <= 5; i++) {
         let oper = document.createElement("div");
         let column = operationsFrame.appendChild(oper);
-        column.className = ` operColumn`;
+        column.className = `operColumn`;
         switch(i) {
             case 1:
             column.setAttribute('id', `multiply`)
@@ -57,7 +60,7 @@ function makeOperations() {
             column.innerHTML = "="
             break
         
-        }
+        };
     };
 };
 makeOperations();
