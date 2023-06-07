@@ -16,7 +16,8 @@ body {
 .calFrame {
     background-color: #0F1013;
     width: 500px;
-    height: 700px;
+    height: auto;
+    padding-bottom: 15px;
 }
 #screen {
     text-align: right;
@@ -34,6 +35,12 @@ body {
     width: 350px;
     grid-gap: 12px;
     margin: 50px 25px 0px 15px;
+    font-size: 65px;
+    text-align: center;
+}
+#zeroBtn {
+    width: 350px;
+    margin: 11px 0px 0px 12px;
     font-size: 65px;
     text-align: center;
 }
