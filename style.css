@@ -4,7 +4,6 @@
 body {
     margin: 0;
 }
-
 .main {
     background-color: #19202b;
     height: 900px;
@@ -25,32 +24,20 @@ body {
     margin: 12px;
     height: 90px;
 }
-#btns {
-    display: flex;
-    height: 500px;
-}
 #nums {
-    display: grid;
-    height: 450px;
-    width: 350px;
-    grid-gap: 12px;
-    margin: 50px 25px 0px 15px;
-    font-size: 65px;
-    text-align: center;
-}
-#zeroBtn {
-    width: 350px;
-    margin: 11px 0px 0px 12px;
-    font-size: 65px;
-    text-align: center;
-}
-#operations {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 450px;
-    width: 100px;
-    margin-top: 50px;
-    font-size: 65px;
-    text-align: center;
+    font-size: 45px;
+    padding: 10px;
+    margin-left: 20px;
+}
+#btns #nums #num {
+    border: 0;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 12px rgba(0, 0, 0, 0.2);
+    margin: 7px;
+    width: 50px;
+    height: 50px;
+    border-radius: 12.8px;
+    background-color: #0f1013;
+    color: #F3FAE1;
 }
