@@ -21,6 +21,7 @@ body {
 }
 #screen {
     text-align: right;
+    font-size: 30px;
     background-color: #D7DACE;
     margin: 12px;
     height: 90px;
