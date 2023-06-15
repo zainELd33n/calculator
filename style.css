@@ -20,10 +20,11 @@ body {
     padding-bottom: 15px;
 }
 #screen {
-    text-align: right;
+    text-align: left;
     font-size: 30px;
     background-color: #D7DACE;
     margin: 12px;
+    padding: 15px 0px 0px 15px;
     height: 90px;
 }
 #btns {
