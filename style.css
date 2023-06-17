@@ -15,9 +15,15 @@ body {
 }
 .calFrame {
     background-color: #0F1013;
+    border-radius: 12px;
     width: 340px;
     height: auto;
     padding-bottom: 15px;
+}
+#screen #output {
+    border: dashed 1px red;
+    display: flex;
+    justify-content: flex-end;
 }
 #screen {
     text-align: left;
@@ -25,7 +31,8 @@ body {
     background-color: #D7DACE;
     margin: 12px;
     padding: 15px 0px 0px 15px;
-    height: 90px;
+    display: flex;
+    flex-direction: column;
 }
 #btns {
     display: flex;
