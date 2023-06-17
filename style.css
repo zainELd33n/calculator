@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital@1&display=swap');
 * {
-    font-family: 'Chivo Mono', Arial, sans-serif;
+    font-family: 'Chivo Mono';
     /* border: dashed 1px red; */
 }
 body {
@@ -39,12 +40,15 @@ body {
     display: flex;
     flex-direction: column;
 }
+.box {
+    margin: 6px 0px 6px 0px
+}
 #btns {
     display: flex;
     flex-direction: column;
-    font-size: 45px;
+    font-size: 35px;
     padding: 10px;
-    margin-left: 20px;
+    align-items: center;
 }
 #btns #key {
     border: 0;
@@ -55,6 +59,7 @@ body {
     border-radius: 12.8px;
     background-color: #0f1013;
     color: #F3FAE1;
+
 }
 #btns #zero {
     border: 0;
@@ -67,10 +72,10 @@ body {
     color: #F3FAE1;
 }
 #btns #key:hover {
-    transition: all 450ms ease;
-    transform: scale(1.1);
+    transition: all 250ms ease;
+    transform: scale(1.04);
 }
 #btns #zero:hover {
-    transition: all 450ms ease;
-    transform: scale(1.08);
+    transition: all 250ms ease;
+    transform: scale(1.04);
 }
