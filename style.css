@@ -39,6 +39,7 @@ body {
     height: 90px;
     display: flex;
     flex-direction: column;
+    overflow-x: clip;
 }
 .box {
     margin: 6px 0px 6px 0px
