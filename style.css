@@ -20,17 +20,22 @@ body {
     height: auto;
     padding-bottom: 15px;
 }
-#screen #output {
-    border: dashed 1px red;
+#output {
     display: flex;
     justify-content: flex-end;
+    margin: 0px;
+}
+#input{
+    margin: 0px;
+    margin-bottom: 13px;
 }
 #screen {
     text-align: left;
     font-size: 30px;
     background-color: #D7DACE;
     margin: 12px;
-    padding: 15px 0px 0px 15px;
+    padding: 11px;
+    height: 90px;
     display: flex;
     flex-direction: column;
 }
