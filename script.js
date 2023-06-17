@@ -4,9 +4,14 @@ const btns = document.getElementById("btns");
 
 let operationResult;
 
+
+
 btns.addEventListener('click', (e) => {
     let target = e.target;
     let value = target.value;
+    if(input.textContent.length > 15) {
+        input.style.fontSize = "20px";
+    }
     if(value != undefined && value != 'AC' && value != 'DE' && value != '='){
         input.innerHTML += value;  
     };
@@ -22,7 +27,7 @@ btns.addEventListener('click', (e) => {
     }
     if(value === '=') {
         output.innerHTML = operate(input.textContent);
-    }
+    };
 });
 
 
@@ -35,6 +40,11 @@ function operate(operation) {
                 Number(operation[i - 1]) *= Number(operation[i + 1]);
                 operation.splice(i + 1, 1);
                 operation.splice(i - 1, 1);
+            }
+            if(operation[i] === '/') {
+                operation[i] = operation[i - 1] / operation[i + 1];
+                operation.splice(i + 1, 1)
+                operation.splice(i - 1, 1)
             }
         }
     }
