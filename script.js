@@ -31,15 +31,15 @@ btns.addEventListener('click', (e) => {
 });
 
 
-    function operate(operation) {
-        // turning operation into an array
-        operation = operation.split(' ')
+function operate(operation) {
+
+    operation = operation.split(' ')
       
-        // stores the result of operation
-        let operationResult;
-        // this loop will go through every element of the array and operates every * or / operation and shrinks the string down until there is no more * or / left
-        while (operation.includes('/') || operation.includes('*')) {
-          for (let i = 0; i < operation.length; i++) {
+
+    let operationResult;
+
+    while (operation.includes('/') || operation.includes('*')) {
+         for (let i = 0; i < operation.length; i++) {
             if (operation[i] === '*') {
               operation[i] = operation[i + 1];
               operation[i] *= operation[i - 1];
@@ -53,9 +53,9 @@ btns.addEventListener('click', (e) => {
             }
           }
         }
-        // this loop will go through every element of the array and operates every - or + operation and shrinks the string down until there is no more - or + left
-        while (operation.includes('+') || operation.includes('-')) {
-          for (let i = 0; i < operation.length; i++) {
+
+    while (operation.includes('+') || operation.includes('-')) {
+        for (let i = 0; i < operation.length; i++) {
             if (operation[i] === '+') {
               operation[i + 1] = Number(operation[i + 1]);
               operation[i - 1] = Number(operation[i - 1]);
@@ -72,11 +72,11 @@ btns.addEventListener('click', (e) => {
             }
           }
         }
-        /* Checking to see if the result have a decimal point if so round it up to two decimal points for better readability else just set operation result to it's original value*/
+
         if (operation[0] % 1 !== 0) {
           operationResult = Math.round(operation[0] * 100) / 100;
         } else {
           operationResult = operation[0];
         }
-        return operationResult;
-      }
+    return operationResult;
+}
