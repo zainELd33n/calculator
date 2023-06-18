@@ -1,9 +1,10 @@
 const input = document.getElementById("input");
 const output = document.getElementById("output");
 const btns = document.getElementById("btns");
+const clickSFX = new Audio('Media/mixkit-cool-interface-click-tone-2568.wav');
+
 
 let operationResult;
-
 
 
 btns.addEventListener('click', (e) => {
@@ -29,7 +30,11 @@ btns.addEventListener('click', (e) => {
         output.innerHTML = operate(input.textContent);
     };
 });
-
+btns.addEventListener('click', (e) => {
+    clickSFX.currentTime = 0;
+    clickSFX.volume = 0.1;
+    clickSFX.play();
+});
 
 function operate(operation) {
 
@@ -38,7 +43,7 @@ function operate(operation) {
 
     let operationResult;
 
-    while (operation.includes('/') || operation.includes('*')) {
+    while (operation.includes('/') || operation.includes('*') || operation.includes('√')) {
          for (let i = 0; i < operation.length; i++) {
             if (operation[i] === '*') {
               operation[i] = operation[i + 1];
